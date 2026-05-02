@@ -90,3 +90,56 @@ let cities = ("Karachi","lahore","peshawar","gilgit","islamabad")
 document.write(cities);
 
 document.write(`Selected Cities list: <br/>`);
+let newCities = cities.slice(2,4)
+document.write(newCities);
+
+// 12.
+
+let str = ["This", "is", "my", "cat"];
+console.log(`Array:`);
+console.log(str);
+let newStr = str.toString();
+newStr=newStr.replaceAll(","," ")
+console.log(`String:`);
+console.log(newStr);
+
+// 13.
+let devices = ['keyboard', 'mouse', 'printer', 'monitor'];
+let out;
+document.write(`Devices: <br/> ${devices} <br/>`)
+out=devices.shift()
+document.write(`Out: <br/> ${out} <br/>`)
+out=devices.shift()
+document.write(`Out: <br/> ${out} <br/>`)
+out=devices.shift()
+document.write(`Out: <br/> ${out} <br/>`)
+out=devices.shift()
+document.write(`Out: <br/> ${out} <br/>`)
+
+// 14.
+
+let devices = ['keyboard', 'mouse', 'printer', 'monitor'];
+let out;
+document.write(`Devices: <br/> ${devices} <br/>`)
+out=devices.pop()
+document.write(`Out: <br/> ${out} <br/>`)
+out=devices.pop()
+document.write(`Out: <br/> ${out} <br/>`)
+out=devices.pop()
+document.write(`Out: <br/> ${out} <br/>`)
+out=devices.pop()
+document.write(`Out: <br/> ${out} <br/>`)
+
+// 15.
+
+let phoneManufac = ["apple", "samsung", "motrolla", "nokia", "sony", "haier"];
+document.write(
+  `<select>
+    <option disabled selected>Select Menu</option>
+  <option>${phoneManufac[0]}</option>
+  <option>${phoneManufac[1]}</option>
+  <option>${phoneManufac[2]}</option>
+  <option>${phoneManufac[3]}</option>
+  <option>${phoneManufac[4]}</option>
+  <option>${phoneManufac[5]}</option>
+  </select>`);
